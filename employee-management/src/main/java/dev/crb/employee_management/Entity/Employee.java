@@ -16,6 +16,15 @@ it will recognize this class as a representation of a database table.
 @Entity
 public class Employee {
 
+    /*
+    The @Id annotation is used to specify the primary key of an entity.
+    The primary key is a unique identifier for each entity instance.
+    In the Employee class, the id field is marked with @Id to indicate that it is the primary key of the entity.
+     */
+    /*
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    specifies that the primary key should be generated automatically by the database.
+     */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -25,6 +34,7 @@ public class Employee {
     private String position;
     private double salary;
 
+    
     public Employee()
     {
 
